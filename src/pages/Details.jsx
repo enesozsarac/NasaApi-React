@@ -62,28 +62,21 @@ function Details() {
         <h1>Name: {data.name}</h1>
         <p>
           Close Approach Date:
-          {data ? data.close_approach_data[0].close_approach_date : data}
+          {data?.close_approach_data[0].close_approach_date}
         </p>
         <p>
           Estimated Diameter:
-          {data
-            ? data.estimated_diameter.kilometers.estimated_diameter_min
-            : data}
-          -
-          {data
-            ? data.estimated_diameter.kilometers.estimated_diameter_max
-            : data}
+          {data?.estimated_diameter.kilometers.estimated_diameter_min}-
+          {data?.estimated_diameter.kilometers.estimated_diameter_max}
         </p>
         <p>
           Relative Velocity:
-          {data
-            ? data.close_approach_data[0].relative_velocity.kilometers_per_hour
-            : data}
+          {data?.close_approach_data[0].relative_velocity.kilometers_per_hour}
           km/h
         </p>
         <p>
           Miss Distance:
-          {data ? data.close_approach_data[0].miss_distance.kilometers : data}
+          {data?.close_approach_data[0].miss_distance.kilometers}
           km
         </p>
       </div>
