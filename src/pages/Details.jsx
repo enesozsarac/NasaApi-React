@@ -36,7 +36,7 @@ function Details() {
     } catch (error) {
       console.error("Error fetching the NEO details", error);
     } finally {
-      setLoading(false); // Set loading to false after data is fetched
+      setLoading(false);
     }
   };
 
@@ -61,29 +61,29 @@ function Details() {
       <div className="border-solid border-4 bg border-sky-500 p-16 rounded-[50px] bg-black bg-opacity-30   tew">
         <h1>Name: {data.name}</h1>
         <p>
-          Close Approach Date:{" "}
+          Close Approach Date:
           {data ? data.close_approach_data[0].close_approach_date : data}
         </p>
         <p>
-          Estimated Diameter:{" "}
+          Estimated Diameter:
           {data
             ? data.estimated_diameter.kilometers.estimated_diameter_min
-            : data}{" "}
-          -{" "}
+            : data}
+          -
           {data
             ? data.estimated_diameter.kilometers.estimated_diameter_max
             : data}
         </p>
         <p>
-          Relative Velocity:{" "}
+          Relative Velocity:
           {data
             ? data.close_approach_data[0].relative_velocity.kilometers_per_hour
-            : data}{" "}
+            : data}
           km/h
         </p>
         <p>
-          Miss Distance:{" "}
-          {data ? data.close_approach_data[0].miss_distance.kilometers : data}{" "}
+          Miss Distance:
+          {data ? data.close_approach_data[0].miss_distance.kilometers : data}
           km
         </p>
       </div>
