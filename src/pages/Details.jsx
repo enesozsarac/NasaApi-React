@@ -20,7 +20,7 @@ function Details() {
   }, []);
 
 return( 
-<div className="flex justify-center items-center h-[100dvh]">
+<div className="flex justify-center items-center h-[90dvh]">
   <div className="border-solid border-4 bg border-sky-500 p-16 rounded-[50px] bg-black bg-opacity-30   tew">
     <h1>Name: {data.name}</h1>
     <p>Close Approach Date: {data?data.close_approach_data[0].close_approach_date:data}</p>
