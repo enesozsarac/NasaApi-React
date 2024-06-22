@@ -64,8 +64,8 @@ function App() {
               <div
                 className={
                   neo.is_potentially_hazardous_asteroid
-                    ? `border-solid border-2 bg border-red-500 mt-5 rounded-[10px]`
-                    : `border-solid border-2 bg border-sky-500 mt-5 rounded-[10px]`
+                    ? `border-solid border-2 bg border-red-500 mt-5 rounded-[10px] pt-2`
+                    : `border-solid border-2 bg border-sky-500 mt-5 rounded-[10px] pt-2`
                 }
                 key={index}
               >

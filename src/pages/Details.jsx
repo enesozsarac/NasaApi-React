@@ -29,14 +29,6 @@ function Details() {
   const [data, setData] = useState("");
   const [loading, setLoading] = useState(true); // Loading state
 
-  console.log(neoId);
-
-  // const fetchNeoDetails = async () => {
-  //   const response = await axios.get(apiUrl);
-  //   setData(response.data);
-  //   console.log(data);
-  // };
-
   const fetchNeoDetails = async () => {
     try {
       const response = await axios.get(apiUrl);
