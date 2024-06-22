@@ -64,8 +64,8 @@ function App() {
               <div
                 className={
                   neo.is_potentially_hazardous_asteroid
-                    ? `border-solid border-2 bg border-red-500 mt-2`
-                    : `border-solid border-2 bg border-sky-500 mt-2`
+                    ? `border-solid border-2 bg border-red-500 mt-5 rounded-[10px]`
+                    : `border-solid border-2 bg border-sky-500 mt-5 rounded-[10px]`
                 }
                 key={index}
               >
@@ -75,8 +75,8 @@ function App() {
                   <button
                     className={
                       neo.is_potentially_hazardous_asteroid
-                        ? `rounded-[10px] p-2 m-2 bg-red-500  hover:bg-red-50`
-                        : `rounded-[10px] p-2 m-2 bg-sky-400 text-white  hover:bg-sky-100 hover:text-black`
+                        ? `rounded-[10px] p-2 m-2 bg-red-500  hover:bg-red-300 `
+                        : `rounded-[10px] p-2 m-2 bg-sky-400 text-white  hover:bg-sky-300 hover:text-black`
                     }
                   >
                     Details
